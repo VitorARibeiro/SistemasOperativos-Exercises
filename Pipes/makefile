@@ -6,6 +6,9 @@ Pipe1 : Pipe1.c
 Pipe2 : Pipe2.c
 		${CC} Pipe2.c -o Pipe2
 
+Pipe3 : Pipe3.c
+		${CC} Pipe3.c -o Pipe3
+
 
 
 
