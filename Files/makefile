@@ -1,2 +1,2 @@
-File1: File1.cpp
-	gcc File1.cpp -o File1
+File1: File1.c
+	gcc File1.c -o File1
