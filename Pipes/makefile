@@ -10,6 +10,10 @@ Pipe3 : Pipe3.c
 		${CC} Pipe3.c -o Pipe3
 
 
+Pipe3 : Pipe4.c
+		${CC} Pipe4.c -o Pipe4
+
+
 
 
 	
