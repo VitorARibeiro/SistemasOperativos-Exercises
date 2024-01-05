@@ -1,3 +1,11 @@
+#ifndef __MYCODE__
+#define __MYCODE__
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/ipc.h>
+#include <sys/shm.h>
 
 #include <stdbool.h>
 
@@ -10,3 +18,4 @@ char* AtachMemoryBlock(char* filename, int size);
 bool DestroyMemoryBlock(int shared_block_id);
 
 
+#endif 

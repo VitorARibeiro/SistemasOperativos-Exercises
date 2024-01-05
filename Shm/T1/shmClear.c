@@ -1,4 +1,4 @@
-#include "shmLib.c"
+#include "shmLib.h"
 
 
 

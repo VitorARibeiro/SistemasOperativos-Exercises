@@ -1,13 +1,13 @@
-shmLib.o : shmLib.c 
-			gcc shmLib.c -o shmLib.o
 
-shmClear: shmClear.c 
-			gcc shmClear.c -o shmClear.o
-			gcc shmClear.o shmLib.o -o shmClear
-shmRead: shmRead.c 
-			gcc shmRead.c -o shmRead.o
-			gcc shmRead.o shmLib.o -o shmRead
+all : shmClear shmLib.o shmRead shmWrite
+shmLib.o: shmLib.c 
+			gcc -c shmLib.c -o shmLib.o
 
-shmWrite: shmWrite.c 
-			gcc shmWrite.c -o shmWrite.o
-			gcc shmWrite.o shmLib.o -o shmWrite
+shmClear: shmClear.c shmLib.o
+			gcc shmClear.c shmLib.o -o shmClear
+
+shmRead: shmRead.c shmLib.o
+			gcc shmRead.c shmLib.o -o shmRead
+
+shmWrite: shmWrite.c shmLib.o
+			gcc shmWrite.c shmLib.o -o shmWrite

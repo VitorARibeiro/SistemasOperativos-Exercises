@@ -1,4 +1,4 @@
-#include <shmLib.h>
+#include "shmLib.h"
 
 
 
@@ -8,7 +8,8 @@ int main(int argc, char* argv[]){
 
     //vamos escrever uma mensagem no bloco
     printf("Writing : %s \n", argv[1]);
-    strncpy(block,argv[1], SIZE);
+    strncpy(block, argv[1] , SIZE);
+    
 
     //deslinkar bloco
        
