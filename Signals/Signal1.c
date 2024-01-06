@@ -4,7 +4,7 @@
 
 
 void signalHandler(int signal){
-    printf("Recebeu um sinal\n");
+    printf("Recebeu um sinal %i\n", signal);
 }
 
 int main(){

@@ -1,6 +1,6 @@
 
 all : shmClear shmLib.o shmRead shmWrite
-shmLib.o: shmLib.c 
+shmLib.o: shmLib.c shmLib.h 
 			gcc -c shmLib.c -o shmLib.o
 
 shmClear: shmClear.c shmLib.o
